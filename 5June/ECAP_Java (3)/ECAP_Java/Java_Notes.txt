@@ -1,0 +1,117 @@
+31/05/24
+Java Introduction
+- Java is a popular programming language introduced in 1995.
+- It is owned by Oracle
+- more than 3 billion devices run java.
+
+
+It is used for
+1)Mobile development(specially with android)
+2)Desktop applications
+3)web Applications
+4)web servers and application servers
+5)Games
+6)Database connectivity
+
+
+
+Why use JAVA?
+- Java works on different platforms like windows,linux,Mac etc
+- It is most used language
+- It is having huge demand over job market
+- It is easy to learn
+- It is open source and free
+- It has huge community support
+- Java is a Object oriented language which gives clear structure of code
+- If you are familiar with c++ or c# then you can switch and vice versa.
+
+
+Rules for writing java code
+- class should start with uppercase letter
+- Java is case-sensitive
+- java file name should match with class name
+- main method is must and compiler will start compiling from main()
+- System.out.println used to print text 
+
+
+Java Syntax 
+public class Main{
+public static void main(){
+System.out.ptintln("Welcome to Java!")
+System.out.ptintln("Welcome to Javascript!")
+
+System.Out.print("Welcome to Java!")
+System.Out.print("Welcome to Java!")
+}
+}
+
+compiling - javac Main.java
+
+Println() - will print the statement in new line
+print() - will print in the same line
+
+Java Comments
+// - single comment
+/* */ - multiline comment
+
+Java Variables
+- Variables are containers for storing data
+- In Java, there are different types of variables
+
+Creating variable syntax - type variableName = value;
+
+Variable Types
+1)String - stores text ("")
+2)int - stores integers (whole numbers without decimals)
+3)float - stores floating point numbers
+4)char - stores single character like 'a' or 'A'
+5)Boolean - stores true or false
+
+The general rules naming variables 
+- All java variables should be uniquely identified
+example - int minutesPerHour = 60; m = 60;
+	  name - "John" , n = "John"
+- Names can contain letters, digits, underscores and dollars.
+- Name should begin with a letter
+- Name can start with a lowercase letter and cannot contain whitespace
+- Names can also start with $ and _
+- Names are case-sensitive for example myvar and myVar are different
+- Reserved words cannot be used such as int and Boolean
+
+
+Java Data Types 
+In Java, there are 2 types 
+1)Primitive Data types - They specify size and value  and it has no additional methods
+Data type     Size      Description 
+- byte        1 byte    stores whole numbers from -128 to 127
+- short	      2 bytes   
+- int         4 bytes
+- long        8 bytes
+- float       4 bytes
+- double      8 bytes
+- Boolean     1 bit
+- char        2 bytes
+
+1)Numbers  - Integers and floats
+* Integers can hold data types such as int,byte,short and long
+* Float can hold types such as float and double
+2)Boolean Data type
+3)Character Data type
+
+
+2)non-primitive data types
+- Strings
+- arrays
+- classes
+
+
+
+
+
+
+
+
+
+
+
+

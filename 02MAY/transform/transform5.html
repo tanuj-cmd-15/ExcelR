@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            border: 1px solid black;
+        }
+        /* transform: matrix( scaleX() ,skewY(),skewX(),scaleY() , translateX(),transaleY())  */
+        
+        #div1 {
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+        
+        #div2 {
+            transform: matrix(1, 0, 0.5, 1, 1, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>Original div</div>
+    <div id="div1">using matrix() method</div>
+    <div id="div2">anothe use of matrix() method</div>
+
+</body>
+
+</html>

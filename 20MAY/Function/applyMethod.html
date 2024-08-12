@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const Person = {
+            firstname: "John",
+            secondname: "smith",
+            fullname: function(city, country) {
+                return this.firstname + " " + this.secondname + " " + city + " " + country;
+            },
+        };
+        console.log(Person.fullname("delhi"));
+        //call() to use it with different parameter
+
+        //object 2
+        const Person1 = {
+            firstname: "John a",
+            secondname: "dane",
+        };
+
+        const Person2 = {
+            firstname: "smith",
+            secondname: "jon",
+        };
+
+        console.log(Person.fullname.apply(Person2, ["pimpri", "india"]));
+        console.log(Person.fullname.apply(Person1, ["pune"]));
+    </script>
+</body>
+
+</html>

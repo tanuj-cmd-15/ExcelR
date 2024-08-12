@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="myImage" src="./ha.jpeg" height="100" width="70" alt="none">
+    <canvas id="myCanvas" height="120" width="90" style="border:1px solid black "></canvas>
+    <button onclick="handleClick()">click</button>
+
+    <script>
+        function handleClick() {
+            var c = document.getElementById("myCanvas");
+            var draw_img = c.getContext("2d");
+            var img = document.getElementById("myImage");
+
+            draw_img.drawImage(img, 10, 10, 70, 100);
+        }
+    </script>
+</body>
+
+</html>

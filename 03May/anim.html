@@ -1,0 +1,61 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Example</title>
+    <style>
+        /* Common styles */
+        
+        .column {
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .column:nth-child(odd) {
+            background-color: aqua;
+        }
+        
+        @media only screen and (min-width: 1024px) {
+            .column {
+                width: 33.33%;
+            }
+        }
+        
+        @media only screen and (max-width: 1023px) {
+            .column {
+                width: 50%;
+            }
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>This is column 1 content.</p>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>This is column 2 content.</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>This is column 3 content.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

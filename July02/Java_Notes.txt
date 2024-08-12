@@ -1,0 +1,830 @@
+31/05/24
+Java Introduction
+- Java is a popular programming language introduced in 1995.
+- It is owned by Oracle
+- more than 3 billion devices run java.
+
+
+It is used for
+1)Mobile development(specially with android)
+2)Desktop applications
+3)web Applications
+4)web servers and application servers
+5)Games
+6)Database connectivity
+
+
+
+Why use JAVA?
+- Java works on different platforms like windows,linux,Mac etc
+- It is most used language
+- It is having huge demand over job market
+- It is easy to learn
+- It is open source and free
+- It has huge community support
+- Java is a Object oriented language which gives clear structure of code
+- If you are familiar with c++ or c# then you can switch and vice versa.
+
+
+Rules for writing java code
+- class should start with uppercase letter
+- Java is case-sensitive
+- java file name should match with class name
+- main method is must and compiler will start compiling from main()
+- System.out.println used to print text 
+
+
+Java Syntax 
+public class Main{
+public static void main(){
+System.out.ptintln("Welcome to Java!")
+System.out.ptintln("Welcome to Javascript!")
+
+System.Out.print("Welcome to Java!")
+System.Out.print("Welcome to Java!")
+}
+}
+
+compiling - javac Main.java
+
+Println() - will print the statement in new line
+print() - will print in the same line
+
+Java Comments
+// - single comment
+/* */ - multiline comment
+
+Java Variables
+- Variables are containers for storing data
+- In Java, there are different types of variables
+
+Creating variable syntax - type variableName = value;
+
+Variable Types
+1)String - stores text ("")
+2)int - stores integers (whole numbers without decimals)
+3)float - stores floating point numbers
+4)char - stores single character like 'a' or 'A'
+5)Boolean - stores true or false
+
+The general rules naming variables 
+- All java variables should be uniquely identified
+example - int minutesPerHour = 60; m = 60;
+	  name - "John" , n = "John"
+- Names can contain letters, digits, underscores and dollars.
+- Name should begin with a letter
+- Name can start with a lowercase letter and cannot contain whitespace
+- Names can also start with $ and _
+- Names are case-sensitive for example myvar and myVar are different
+- Reserved words cannot be used such as int and Boolean
+
+
+Java Data Types 
+In Java, there are 2 types 
+1)Primitive Data types - They specify size and value  and it has no additional methods
+Data type     Size      Description 
+- byte        1 byte    stores whole numbers from -128 to 127
+- short	      2 bytes   
+- int         4 bytes
+- long        8 bytes
+- float       4 bytes
+- double      8 bytes
+- Boolean     1 bit
+- char        2 bytes
+
+1)Numbers  - Integers and floats
+* Integers can hold data types such as int,byte,short and long
+* Float can hold types such as float and double
+2)Boolean Data type
+3)Character Data type
+
+
+2)non-primitive data types
+- Strings - They are used to store text example - "John"
+
+- arrays - 
+- classes -
+
+Java Type Casting 
+- It is when you assign value of one primitive data type to another 
+
+Types of Casting
+1)Widening casting / Automatic Type casting
+- Converting smaller type to larger  (done by compiler)
+byte -> short ->char->int->long->double
+
+2)Narrowing Casting/ Manual Type casting
+- Converting large type to smaller ( done by programmer )
+double->long->int->char->short->byte
+
+
+Java Operators
+- Operators are used to perform some operation on variables and values
+
+Types of Operators
+1)Arithmetic Operator - used to perform mathematical operations
+  Operator       Name     	Description 
+1) +  		Addition	Adds 2 values
+2) - 		Substraction	subtracts 
+3)*		Multiplication	multiplies
+4)/		Division	Divides
+5)%		Modulus		returns reminder after a%b
+6)++/--		Increment/
+		decrement
+2)Assignment - Used to assign a value 
+Operator 	Example 	Same as 
+1)=		x = 5		x= 5
+2)+=		x+=3		x=x+3
+3)-=		x-=3		x=x-3
+4)*=		x*=3		x=x*3
+5)/=		x/=3		x=x/3
+6)%= 		x%=3		x=x%3
+7)&=		x&=3		x=x&3
+8)|=		x|=3		x=x|3
+9)^=		x^=3		x=x^3
+10)>>=		x>>=3		x=x>>3
+11)<<=		x<<=3		x=x<<3
+	
+3)Comparison
+4)Logical
+5)Bitwise
+
+06/06/24
+Java I/o statement
+- println()
+-print()
+
+Input statement 
+There are many ways among that will be discussing scanner class
+- Import java.util.scanner 
+
+
+Conditional Statements
+1)Java if statement - whenever condition gets satisfied it will execute code.
+2)Java if...else statement
+3)Java if...else...if statement
+4)Nested if statement
+5)Switch Statement 
+
+Ternary operator ( alternative to if...else)
+syntax -
+Condition? True block :False Block
+
+
+Java Loops
+1)For Loop
+- It is used to run block of code for certain times 
+Syntax - for(intialExpression;testExpression;updateExpression){
+		code block;
+	}
+2)while loop
+- It is used to run a specific code until certain condition is true
+syntax - while(testCondition){
+		// block of code
+		}
+ 
+3)do-while 
+syntax - do{
+		//code block
+	}while(condition)
+
+4)For-each loop - arrays
+
+07/06/24
+Java Arrays
+- 1D Arrays
+- 2D Arrays
+-3D Arrays
+
+How to copy one array to another
+1)Copying arrays using Assignment operator
+
+
+
+work-
+1)Write a Java program to add 2 matrix using multi-dimentional array.
+2)Write a program to copy elements from one 2D array to another.
+
+
+10/06/24
+Object Oriented Programming in Java
+- It is the core concept followed by java
+- It is an approach that breaks the complex problems into smaller objects
+
+Object - An object is an entity that has a state and behaviour. for example a car. It has
+- state - make,model,color
+- Behaviours - start(), stop(),pause()
+
+Class 
+- A class is a blueprint of an object
+
+Create a class
+class className{
+	// fields / variables
+	//methods
+}
+
+- Fields are used to store data ( variables)
+- Methods are used to perform some operations
+
+
+Java Objects
+- Instance of class. we can create objects using class
+
+syntax 
+className object = new className();
+
+Car car_Obj = new Car();
+
+
+Java Methods 
+Method - A method is a block of code that performs a specific task
+	Dividing the code into smaller chunks (reusable)
+
+In Java, there are 2 types of methods
+1)User-defined methods
+- Created by user/ programmer based on requirement.
+
+
+Declare a method
+returnType methodName(){
+	// Method Body
+}
+
+returnType - specifies what type of value a method should return
+		example - addition method will return int type
+
+methodName - It is an identifier that is used to refer to the particular function in a program.
+
+Method Body - Logic part ( functionality to be performed) - { }
+
+modifier - It defines access type like public,private,static
+
+parameter - The values passed to a method
+
+calling a method
+methodName();
+
+2)Standard Library Methods
+
+- Built-in methods in Java available to use.
+- Java Class Library (JCL)
+- examples - print(),println(),sqrt()
+
+Advantages of using methods
+- Code reusability
+- Methods are more easier and readable to debug
+
+Java Method Overloading
+-In Java, two or more methods may have same name if they differ in parameters (different number of parameters,different types of parameters,or both). These methods are called as overloaded methods.This feature called as overloading.
+
+
+11/06/24
+Java Constructors
+- A constructor in Java is similar to a method that is invoked when an object of the class is created.
+- The name of the constructor  will be same as class name and will not have return type
+
+Syntax - class Test {
+		Test(){
+			constructor body
+			}
+		}
+
+Types of Constructors
+1)No-Arg constructor 
+- This type of constructor will not accept arguments
+
+
+2)Parameterized constructor
+- It accepts one or more parameters
+
+3)Default Constructor
+- If you do not create constructor then Java compiler will automatically creates  a no-arg constructor during the program execution with default value
+
+Constructor overloading in java
+- we can create two or more constructors with different parameters this is called constructor overloading. 
+
+Important Notes on constructors
+- Constructors are invoked when you instantiate objects
+- There are 2 rules for creating constructors
+	1)The name of constructor should be same as class name
+	2)Constructor in Java should not have return type.
+- If you have not created any constructor then while compiling, Java compiler will automatically creates default constructor.
+- A constructor cant be static abstract and final 
+- Constructor is overloaded
+
+Java static keyword
+- If we want to access class members, we must create objects of class to access the class members. But if we want to access the variables without creating any instances then we should use static keyword.
+- Example is Math functions ( Java has almost all members Math function as static)
+
+- Static Methods are also called as class methods. You can use class name to invoke static method instead of using object
+
+class Test{
+	static method(){...code}
+}
+
+class main()
+{
+// normal invokation
+Test obj = new Test();
+obj.method()
+
+
+// static keyword
+Test.method()
+
+12/06/24
+Java Strings and its Methods
+- In Java, String is a group of characters example - "Hello"
+- Strings are represented by double quotes in Java
+
+Two ways to declare string 
+String str = "hello" // string literal
+String str = new String("hello")// using new keyword
+
+
+Java String operations
+1)length() - Find the length of strings
+2)concat() - join 2 strings 
+3)equals() - compare 2 strings
+4)Contains() -
+5)join() - 
+6)Substring() - Extract part of a string using index
+7)replace()
+8)toCharArray() - converts string into char array
+9)charAt() - Returns char at specified position
+10)indexOf() - Returns index of first occurance of a  char.
+11)split() - divide string into substrings
+12)toUpperCase() and toLowerCase()
+13)isEmpty() - true/false
+14)startsWith() and endsWith() -
+
+
+13/06/24
+StringBuffer - This is a class provided by Java to create mutable strings.It is synchronous and one thread can access the methods of this class.
+
+
+StringBuilder - Similar to StringBuffer class as it represents the mutable characters of string. The methods of this class can be used with multiple threads so it is suitable for asynchronous operations.
+
+Difference between StringBuffer and StringBuiler class in Java
+
+StringBuffer class			StringBuilder class
+1)StringBuffer is present in Java   1)StringBuilder introduced in 					Java 5
+2)StringBuffer is Synchronized      2)StringBuilder is asynchronous 
+ Meaning multiple Threads cannot 	meaning the methods of this
+call methods of this class		class can be accessed by 
+from beginning.				multiple threads
+3)Since it is synchronized 	     3) It is Asynchronous so it 
+we call this class safe.		is called not safe.
+4)Slower than StringBuilder	     4)Compared to StringBuffer it 					is faster
+
+trim() - used to remove whitespace
+equalsIgnoreCase() - same as equals but ignores the case
+
+Java Final Keyword
+- This keyword is used to denote constants. It can be variables, methods, and classes
+- Once any entity (var,method,class) declared with final, it can be assigned only once
+   - The final variable cant be reassigned another value
+   - The final methods cant be overridden
+   - The final class cant be extended
+
+
+Java Recursion
+In Java, a method that calls itself is called recursive method and the process is called recursion.
+we need to use conditional statements in order to stop the recursion otherwise it will be infinite.
+
+Factorial of 5 = 5*4*3*2*1
+
+Advantages of recursion
+- It is simple and easy to debug and maintain
+
+Disadvantages
+- It uses more storage and slow compared to other methods
+
+Java instanceOf operator
+- this operator checks whether an object is instance of particular class or not
+
+syntax - objName instanceOf className;
+
+
+14/06/24
+Inheritance
+- It is one of the key features of OOPS that allows us to create a new class from an existing class. 
+- The new class that is created will be called as subclass(child class or derived class).
+- The class which allows other classes to derive some of its properties and methods called super class/parent class.
+- The extend keyword to perform inheritance in Java.
+
+Method Overriding in inheritance
+- When a method of subclass overrides the method in superclass this is called as method overriding
+
+Inheritance Types
+1)Single Inheritance 
+2)Multilevel Inheritance - 
+3)Hierarchical inheritance - 
+- There will be one base class and multiple sub classes which will inherit from a single base class
+
+
+5)Hybrid Inheritance - 
+
+
+17/06/24
+Java Abstract class
+- The abstract class in Java cant be instantiated(We can not create objects of abstract classes).
+- we use abstract keyword to define an abstract class.
+
+Java Abstract methods
+- A method which doesn't have its body called abstract methods
+- we use abstract keyword to denote the abstract method.
+- The class which is having abstract methods should be declared as abstract otherwise it will throw an error.
+
+Note
+- To implement features of abstract class, we need to inherit it and create objects of subclass
+
+Java Interface
+-An interface is a fully abstract class that includes group of abstract methods(without body)
+-To create interface will use interface keyword
+- help us to achieve abstraction
+- we can implement multiple inheritance using interface
+
+
+Difference between Abstract class and Interface
+
+	Abstract class				Interface
+1)A class declared with abstract 	1)It is a collection of 
+keyword is called abstract class.	abstract methods
+2)Can have both abstract methods 	2)It will have only 
+and normal methods			abstract methods
+3)It is not used to implement		3)It is used to 
+multiple inheritance			implement multiple 	
+					inheritance.
+4)Abstract classes will be 		4)It will be implemented
+extended 		
+
+
+
+4)Multiple inheritance - Interfaces 
+- 
+
+
+5) Hybrid Inheritance
+- A combination of two or more types of inheritance. 
+- Acquiring properties from multiple classes 
+- Since Java doesn't support multiple inheritance we need to use interface and classes to implement it.
+
+single and hierarchical inheritance 
+multilevel and hierarchical
+
+Superclass (employees) - general attributes
+Interfaces (JavaDevelopers,PythonDevelopers) - specific skill
+subclass - (fullstackdeveloper) - inherit properties from employees 
+		and implements skills from both interfaces
+
+
+
+18/06/24
+Java Polymorphism
+- It is one of the important feature in OOPS
+- It simply means that one thing that can take multiple forms
+- Any entity (method,opertor,object) can perform different operations in different scenarios.
+
+we can achieve polymorphism using 3 ways
+1)Method Overriding
+2)Method Overloading
+3)Operator overloading - + - addition and concatenation
+
+
+Polyphormic variables
+- A variable is called polymorphic if it refers to different values under different conditions
+
+Java Encapsulation
+- Encapsulation is a key feature of OOPS and it refers to the bundling of fields and methods inside a single class.
+-It also helps in achieving data hiding.
+
+
+19/06/24
+Java packages
+- A package in Java is used to group related classes like a folder.
+- There are 2 types of packages in Java
+
+1)Built-in-package - Java API
+
+2)user-defined- package - 
+
+
+Access specifiers in Java
+-Default - No keyword required
+	When no access modifier specified to any method,class,data member then It will be having default access modifier. The methods and fields which are default they will be accessible within same package.
+
+
+-Private - The methods classes and fields declared with this modifier will not be accessible to other class 
+
+
+-Protected - when method and data member are declared protected they can be accessed within the same package and also from the subclasses.
+
+
+-Public - when methods,variables,classes are declared with public we can access it from anywhere and there is no scope restriction
+
+
+nested classes
+Association and aggregation 
+
+Association 
+- It is a relationship between two separate classes which is established through their objects
+- one-to-one, one-to-many,many-to-one and many-to-many
+
+Aggregation 
+- It is one of the forms of Association
+- Unidirectional
+- independent entities
+
+Composition
+- It is a restricted form of aggregation
+- Two entities will be highly dependent(if one entity doesn't exist then other cant survive)
+
+Aggregation vs Composition
+1)Dependency - Aggregation is independent relationship between 2 entities but composition is highly dependent
+2)Composition is Strong association and aggregation is weak 
+
+
+21/06/24
+Java Exception
+- An Exception is an unexpected event that occurs during program execution(compile time/run time).
+- It effects the flow of program which can cause the program termination.
+
+An exception can occur for many reasons
+1)Invalid user input
+2)Device failure
+3)Loss of network
+4)Code errors
+5)Opening an unavailable file
+
+Java Exception Hierarchy
+1)Error - 
+	Memory leaks
+	Overflow errors
+	infinite recursion
+	incompatibility with library funtions
+
+2)Exception
+	-Runtime Exception - Unchecked exceptions
+		1)Improper use of API
+		2)Null pointer access
+		3)Array with out of bounds
+		4)Dividing a number by 0
+	-IOException- Checked Exceptions
+		1)Trying to open unavailable file
+		2)Trying to read something from past file.
+
+
+Java Exception Handling
+- In Java there are different ways to handle exceptions
+1)try...catch block
+- Syntax - try {
+		//code 
+		}
+	   catch(Exception e){
+		//code
+		}
+		
+
+2)finally block - It is optional and executed always if there is exception or not. For each try block there should be one finally block.
+
+3)throw and throws keyword
+- Throw is used to explicitly throw a single exception
+
+-Throws keyword is used to declare the type of exception that might occur in a method
+
+Difference between Throw and Throws
+Throw
+- Java Throw is used to throw an exception explicitly in the code inside a method / block
+- Used with unchecked exceptions
+- This is used inside a method
+- only one exception is allowed using throw
+
+
+Throws
+- Java Throws is used with a method to declare an exception
+- used for both checked and unchecked exceptions
+- used with a method attached
+- we can declare multiple exceptions here.
+
+
+Java catch multiple catch exceptions
+
+
+Java Collections Framework
+- Includes set of interfaces and classes that implement various data structures and algorithms
+
+Several Interfaces
+1)Collection interface
+	- List - ordered interface that allow us to add and remove 		elements like array.
+
+	- Set - SortedSet - Interface allows us to store elements 		in different sets which is similar to mathematical 		set. It 	cant have duplicates
+	- Queue - Deque - First In First Out manner
+2)Map - SortedMap - key-value pairs
+
+3)Iterator - ListIterator - methods that can be used to access elements of collections
+
+why collection?
+- More efficient code as the collection framework is highly optimized
+- we do not need to write code manually to implement DSA.
+
+
+	
+Collection Interface
+- root of collection interface
+- There is no direct implementation of this interface It is implemented with the help of its types like list,set,queue.
+
+List 
+- ordered interface that allows us to store and manipulate the data sequentially
+Classes that implement List
+- ArrayList - 
+- LinkedList
+- vector
+- stack
+
+Note - java.util.List
+
+Exception Handling Interview Questions
+
+
+25/06/24
+LinkedList
+- The LinkedList class of the Java collection Framework provides the functionality to implement linkedlist data structure(doubly linkedlist)
+
+LinkedList
+Syntax  - LinkedList<Type> nameOfList = new LinkedList<>()
+
+
+Difference b/w ArrayList and LinkedList
+ArrayList
+- Implements list interface
+- stores Single value in single position
+- resizable array implementation
+- whenever an element added here, all the elements after that position will be shifted
+
+
+
+LinkedList
+- Implement list,Queue,Deque
+- 3 fields - previous address,data,next address
+- Implemenmts doubly linked list
+- whenever any item added, prev and next address will be changed
+
+
+Java Vector
+- The class implements list interface that allows us to create resizable arrays similar to arrayList.
+- The vector class is synchronised with each individual operation
+meaning if you are performing any operation, the vector class automatically locks it and do not allow other thread to use it at same time.whereas arrayList is not synchronised.
+
+Syntax - Vector<Type> nameOfList = new Vector<>();
+
+Java Stack Class
+- used to implement stack DS
+- stack stores elements in Last In First Out manner
+
+Stack<Type> nameOfStack = new Stack<>();
+
+
+26/06/24
+Java Queue Interface
+- This provides the functionality of the queue data structure
+- Queue interface provides different classes that implements queue
+1)ArrayDeque
+2)LinkedList
+3)PriorityQueue
+
+Queue - First in First Out manner
+
+Methos of Queue
+1)add() - Insert element to queue
+2)offer()- Insert element into queue
+3)element() - return head of the queue
+4)peek() - return head of the queue
+5)remove() - remove element and gives exception if queue is empty
+6)poll() - remove element and will return null if queue is empty
+
+
+Java Deque interface methods
+1)addFirst() - adds element in the beginning, if queue is full throw exception
+2)addLast() - adds element in the last
+3)offerFirst()- adds element in the beginning and returns false if the queue is full
+4)offerLast()
+5)getFirst() - return first element, throws exception if queue is empty 
+6)getLast() - return last element
+7)peekFirst() - return first element and return null if queue is empty
+8)peekLast()
+9)removeFirst() - remove first element and throw exception if queue is empty 
+10)removeLast()
+11)pollFirst() - remove first element and return null if queue is 
+12)pollLast()
+
+
+Task - Implement deque using linkedlist class and make some manipulations
+
+Java BlockingQueue
+- ArrayBlockingQueue
+-LinkedBlockingQueue
+
+methods 
+1)put - insert elemnt
+2)take() - remove element
+
+
+Comparator 
+sort()
+
+
+27/0/24
+Java Map Interface
+- This interface provides the functionality of map structure
+-In Java, elements of map are stored in the form of key/value pairs
+Keys will be unique values associated with individual values
+- A map cant have duplicate keys
+
+- example - keys   values
+	    in 	    India
+	    us 	    United States
+- It maintains 3 different sets  - set of keys, set of values,
+					key/value association
+
+-Classes that implements Map
+1)HashMap
+- It is one of the class of java collection framework that provides the functionality of hash table data structure. It stores the data in the form of key/value pairs.
+
+3)LinkedHashMap
+- It provides hash table and linked list implementation
+- Capacity => How many entries it can store - 8
+- loadfactor => 0.6
+
+Difference b/w LinkedHashMap and HashMap
+- LinkedHashMap follows doubly linked list structure internally whereas HashMap doesn't 
+- LinkedHashMap class requires more storage compared to HashMap.
+- LinkedHashMap is slower compared to HashMap
+
+
+2)EnumMap
+4)WeakHashMap
+
+01/07/24
+5)TreeMap - It is one of the class of Java collection framework It provides the tree data structure implementation.
+
+Syntax - TreeMap<key,value> nameOfMap = new TreeMap<>();
+
+key - unique identifier 
+value - associated with keys 
+
+Insert elements to TreeMap
+1)put()
+2)putAll()
+3)putIfAbsent()
+
+Methods for Navigation
+1)firstKey()
+2)firstEntry()
+3)lastKey()
+4)lastEntry()
+
+02/07/24
+Java WeakHashMap
+- It is class of Java Collection Framework that provides the feature of hash table data structure
+- It implements map interface
+- The object of a weak reference type can be garbage collected in Java if the reference is no longer used in the program
+
+Methods inserting elements
+1)put()
+2)putAll()
+3)putIfAbsent()
+
+Java EnumMap 
+Enums - (short of enumeration ) It is a type that has fixed set of constant values. Enum keyword is used to declare enums.
+
+Enum Size {
+	SMALL,MEDIUM,LARGE,EXTRALARGE
+	}
+
+- java.util.EnumMap
+keys - Enum elements are used as keys 
+values - associated with every Enum element
+
+- EnumMap class also implements cloneable and serializable interface.
+
+Cloneable Interface - It allows us to make a copy of instance of classes
+
+Serializable Interface - This allows classes to be serialized. Objects of classes will be converted into bits and bytes before transmitting it over a network.
+
+Set
+Date package
+Multithreading
+File Handling 
+
+
+
+
+
+
+
+
+
+
+

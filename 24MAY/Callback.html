@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button onclick="myStop()">stop</button>
+    <script>
+        //setTimeout(myfunction, 5000);
+        const myInterval = setInterval(myfunction, 1000);
+        let count = 0;
+
+        function myfunction() {
+            document.getElementById("demo").innerHTML = "welcometo async JS" + count++;
+        }
+
+        function myStop() {
+            clearInterval(myInterval);
+        }
+    </script>
+</body>
+
+</html>

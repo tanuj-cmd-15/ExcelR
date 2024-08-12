@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["APR", "May", "Jun"];
+        const q3 = ["July", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "Dec"];
+
+        const Year1 = q1.concat(q2)
+        console.log(Year1);
+
+        const Year = [...q1, ...q2, ...q3, ...q4];
+        console.log(Year);
+
+
+        const Student1 = {
+            firstname: "John",
+            lastName: "n",
+            age: 28,
+        };
+        //const {firstname, lastname} =Student1;
+        const Student2 = {
+            RNo: 101,
+            Name: "tom",
+        };
+
+        const student = {...Student1,
+            ...Student2
+        };
+        console.log(student);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        //let promise = new Promise(function(resolve, reject) {
+        //Producing code (which takes time)
+
+        //  resolve(); //when successful
+        //   reject(); ///whe error
+        //});
+
+        //  promise.then(
+        //   functon(val){
+        //console.log("successful");
+        // },
+        //    function(err) {
+        //    console.log(err); 
+        // }
+        // );
+
+        const myPromise = new Promise(function(myResolve, myReject) {
+            setTimeout(function() {
+                myResolve("Welcome promise !");
+            }, 5000)
+        });
+
+
+        myPromise.then(function(val) {
+            document.getElementById("demo").innerHTML = val;
+        }, function(err) {
+            document.getElementById("demo").innerHTML = err;
+        });
+    </script>
+</body>
+
+</html>

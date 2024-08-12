@@ -1,0 +1,156 @@
+Application
+- It is a software which helps us to do a particular task
+- It makes our life easy
+Types of application
+1)standalone / static applications
+- portpolio 
+- broachures
+- camera/calculator
+
+2)Dynamic applications / web applications
+- e-commerce application
+- HR-Management portal
+- edtech /elearning 
+- food-ordering application
+
+Basic structure of software development 
+1) Frontend 
+- its make,model,color if it a car
+- everything that you see on the website
+
+2) Backend
+- engine of a car can be backend
+- Its business logic written using - java,
+
+3) Database
+- fuel of the car can be data
+- It is a place to store data
+
+
+SQL 
+- Structured Query Language
+- It is not a Database Management System 
+- It is used to perform some operations such as create,Read,Update 
+on the records which are stored already in the database
+- If you want to perform some operation on the database DBMS 
+- Example Oracle,mySql,mongodb
+
+History of SQL
+- A paper published by great scientist E.F Codd in 1970 about "A relational Model of Data for large shared Data Banks"
+- IBM researchers Raymond Boyce and Donald Chamberlin originally developed  SEQUEL (Structured English Query Language)
+- at the end of 1970s relational software inc developed first SQL using concepts of all 3 scientists 
+- SQL was totally based on RDBMS
+- In 1979, Relational software inc was known as oracle corporation which was first implementation of SQL language
+
+why SQL?
+- it is used to perform CRUD operations
+- It helps to describe data
+- allo you to restrict or set the permission to access the data
+- modify the data
+
+Process of SQL
+
+Types of Database
+1)Non-Relational
+- In a non-relational database, data is stored in key-value pairs
+example - { 
+		"id":101,
+		"name": "John",
+		"age":25
+	  }
+- commonly used non-relational database management system such as MongoDB,Amazon DynamoDB,Redis etc
+
+
+2)Relational(RDBMS)
+- In RDBMS, data will be stored in tabular format
+
+for example 
+
+student_id   student_Name  student_age  student_city
+1001	     Ramesh 	     19		Bengaluru
+1002	     Suresh 	     21		Mysore	
+
+
+- commonly used RDBMS like MYSQL,Oracle,PostgreSQL
+
+12/07/24
+SQL Comments Types
+1)single-line comments -  double dash -- 
+2)multi-line comments
+
+SQL Data Types
+- In SQL each column has a data type
+
+syntax - CREATE TABLE table_name(
+		column_name1 datatype1,
+		column_name2 datatype2,
+		column_name3 datatype3,
+		.....
+  	)
+
+SQL Server Data Types
+Numeric Data type
+1)BIT - Can store single bit i.e., 0 or 1 
+2)TINYINT - can store numbers from 0 to 255
+3)SMALLINT - can store numbers from -32768 to 32767
+4)INT - can store -2147483648 to 2147483647
+5)BIGINT - can store -9223372036854775808 to 9223372036854775807
+
+String Data Types
+1)CHAR(x) - can store characters of fixed length (max 8000 chars)
+2)VARCHAR(x) - can store characters of given length (max 8000)
+3)TEXT - can store chars up to 2 GB size
+4)IMAGE - can store binary string upto 2 GB
+
+Date and Time data types
+1)DATETIME - can store date from Jan 1, 1753 to dec 31, 9999 with time
+2)DATETIME2 - can store date from Jan 1,0001 to dec 31, 9999 with time
+3)DATE - can only store date from Jan 1,0001 to dec 31, 9999
+4)TIME - can store only time.
+
+
+MYSQL Data Types
+Numeric Data Types
+1)BIT(x) - can store x-bit values. range from 1 to 64.
+2)TINYINT - can store numbers -128 to 127
+3)SMALLINT - can store numbers from -32768 to 32767
+4)MEDIUMINT - can store numbers from -8388608 to 8388607
+5)INT -  can store -2147483648 to 2147483647
+6)BIGINT - can store -9223372036854775808 to 9223372036854775807
+7)DECIMAL(x,y) - can store decimal number of total x digits (max upto 65) y digits (max upto 30)
+
+String Data types
+1)CHAR(x) - can store chars of fixed length (max upto 8000)
+2)VARCHAR(x) - can store characters upto given length (upto 8000)
+3)BINARY(X) - Can store binary string of fixed length - 1011011
+4)VARBINARY - can store binary strings upto given length 
+5)TINYTEXT - can store chars upto 255
+6)TEXT - can store upto 16777215
+7)LONGTEXT - upto 4294967295
+8)BLOB - can store large binary object upto 65535 bytes
+9)MEDIUMBLOB - 16777215 bytes
+10)LONGBLOB - 4294967295 bytes
+
+Date and time types
+DATE - can store format YYYY-MM-DD ranging from 1000-01-01 to 9999-12-31
+DATETIME - can store date and time in format of YYYY-MM_DD hh:mm:ss
+TIME - can store time in format of hh:mm:ss 
+YEAR - can store in digits from 1901 to 2155
+TIMESTAMP - can store timestamp from current time zone to UTC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

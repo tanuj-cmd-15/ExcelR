@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const fruits = new Map([
+            ["apple", "200"],
+            ["mango", "1000"],
+            ["orange", "100"]
+        ]);
+
+        let num = fruits.get("mango");
+        console.log(num);
+
+        fruits.set("watermelon", 250);
+        let num2 = fruits.get("watermelon");
+        console.log(num2);
+
+        console.log(fruits);
+    </script>
+</body>
+
+</html>

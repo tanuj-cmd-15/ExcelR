@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" height="300" width="300" style="border: 1px solid black;">
+
+    </canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const text = canvas.getContext("2d");
+        text.font = "50px Arial";
+        text.fillStyle = "aqua";
+        text.fillText("Hello World", 10, 120);
+        text.strokeText("Hello World", 10, 80)
+    </script>
+</body>
+
+</html>

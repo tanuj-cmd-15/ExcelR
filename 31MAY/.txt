@@ -1,0 +1,13 @@
+public class Main(){
+    public static void main(String[] args){
+        System.out.println("hello Java Users!");
+    }
+}
+
+
+***************Rules for java code *****************
+- class should start with uppercase letters 
+- java is case- sensitive 
+- java file should match with class name
+- main metjhod is must and compiler will start compiling from main() 
+- System.out.println used to print text  

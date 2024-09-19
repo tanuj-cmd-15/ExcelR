@@ -1,0 +1,48 @@
+use mychema;
+select * from customer where age between 25 AND 30; -- included both element 25 and 30
+
+select * from customer where age not between 25 AND 30; -- botj element will be excluded
+
+select * from customer where first_name between 'B' AND 'j'; -- b is included but not included j 
+
+-- Like And NOT LIKE operators
+select * from customer where country LIKE 'UK';
+select * from customer;
+-- select customers whose last name with R and ends with tablt table
+select * from customer where last_name LIKE 'R%n' or last_name like '%e';
+select * from customer where cust_id LIKE '1%5' or cust_id LIKE '%1';
+
+-- invert like with not 
+
+select * from customer where country not like 'USA';
+
+-- IN operator 
+select first_name , country from customer where country IN ('USA'); 
+select first_name , country from customer where 'UK' IN (country); 
+
+-- Not in operator 
+select first_name , country from customer where country NOT IN ('USA');
+select first_name , country from customer where 'UK' NOT IN (country);  
+
+-- exists operator
+create table Orders(
+order_id int,
+item varchar(255),
+amount int,
+cust_id int
+);
+
+insert into Orders values(1,'Pen',10,104),
+						(2,'Book',40,105),
+                        (3,'claci',100,102),
+                        (4,'Pen-box',30,4),
+                        (5,'scale',10,103);
+select * from orders;
+
+select cust_id ,first_name from customer where exists(
+					select order_id from orders 
+						where orders.cust_id = customer.cust_id
+                );
+insert into customer values(100,'harish','ghodke',null,'india'),
+							(108,'om',null,null,'pak');
+select * from customer where age is null;
